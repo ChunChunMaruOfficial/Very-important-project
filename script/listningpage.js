@@ -1,5 +1,5 @@
-var range = document.querySelector(".range");
-var rangeValue = document.getElementById("rangeinput");
+let range = document.querySelector(".range");
+let rangeValue = document.getElementById("rangeinput");
 
 range.addEventListener("input", function () {
     rangeValue.innerHTML = "$" + this.value;
@@ -7,10 +7,10 @@ range.addEventListener("input", function () {
 
 function clone(bbody, cchild, count, number) {
 
-    var body = document.querySelector(bbody);
-    var child = document.querySelector(cchild);
-    for (var i = 0; i < count; i++) {
-        var clonedFrame = child.cloneNode(true);
+    let body = document.querySelector(bbody);
+    let child = document.querySelector(cchild);
+    for (let i = 0; i < count; i++) {
+        let clonedFrame = child.cloneNode(true);
         body.appendChild(clonedFrame);
 
         switch (number) {
@@ -89,43 +89,28 @@ clone('.nav_buttons', '#nm', 5, 4)
 
 
 function dropdown(button, dropbox) {
-    var arrow = document.querySelector(button);
-    var box = document.querySelector(dropbox);
+    let arrow = document.querySelector(button);
+    let box = document.querySelector(dropbox);
     arrow.addEventListener('click', function () {
-
-        if (box.classList.contains('close')) { //проверка на существоакание элемента
-            box.classList.add('open');
-            box.classList.remove('close');
-            arrow.classList.remove('rotate');
-            arrow.classList.add('rerotate');
-
-        } else {
-            arrow.classList.remove('rerotate');
-            arrow.classList.add('rotate');
-
-            box.classList.add('close') //вверх
-            box.classList.remove('open');
-        }
+            box.classList.toggle('close');
+            arrow.classList.toggle('rerotate');
+            box.classList.toggle('open');
+            arrow.classList.toggle('rotate');
     });
 }
 
 
 const ual = document.querySelector('#casual')
+const cas = document.querySelector('.casual')
 ual.addEventListener('click', function () {
-    const cas = document.querySelector('.casual')
-    if (cas.classList.contains('lilclose')) { //проверка на существоакание элемента
-        cas.classList.add('lilopen');
-        cas.classList.remove('lilclose');
-        ual.classList.remove('rotate');
-        ual.classList.add('rerotate');
 
-    } else {
-        ual.classList.remove('rerotate');
-        ual.classList.add('rotate');
+   
+        cas.classList.toggle('lilopen')
+        ual.classList.toggle('rerotate')
 
-        cas.classList.add('lilclose') //вверх
-        cas.classList.remove('lilopen');
-    }
+        ual.classList.toggle('rotate')
+        cas.classList.toggle('lilclose')
+    
 });
 
 dropdown('#size_arrow', '.checkbox')
@@ -134,9 +119,9 @@ dropdown('#number_arrow', '.checkbox_number')
 dropdown('#gender_arrow', '.gender')
 
 
-var elementToMove = document.querySelector('.content>aside');
-var ButtonOut = document.querySelector('#right_button');
-var ButtonIn = document.querySelector('#left_button');
+let elementToMove = document.querySelector('.content>aside');
+let ButtonOut = document.querySelector('#right_button');
+let ButtonIn = document.querySelector('#left_button');
 
 ButtonOut.addEventListener('click', function() { //та что снаружи
     elementToMove.classList.add('showright');

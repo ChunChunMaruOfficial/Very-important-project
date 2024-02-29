@@ -9,7 +9,7 @@
     background: var(--Dark-Gray, #232321);
     color: var(--Pure-White, #FFF);
     font-family: Rubik;
-    font-size: calc(10px + 4 * (100vw / 1440));
+    font-size: calc(8px + 4 * (100vw / 1440));
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -17,13 +17,27 @@
     text-transform: uppercase;
 }
 
+@media (hover: hover){
+    .dropdown-content a:hover {
+        background-color: #eaeaea;
+    }
+    .categories_header>div>button:hover {
+        background-color: rgb(187, 187, 187);
+    }
+}
+
+@media (hover: none){
+    .dropdown-content a:active {
+        background-color: #eaeaea;
+    }
+    .categories_header>div>button:active {
+        background-color: rgb(187, 187, 187);
+    }
+}
+
 @media (max-width: 1600px) {
     :root {
         --default-vw: -75vw;
-    }
-
-    .main-bunner {
-        /* background-color: rgb(58, 71, 32); */
     }
 
     .column {
@@ -44,10 +58,6 @@
         --default-vw: -77vw;
     }
 
-    .main-bunner {
-        /* background-color: rgb(40, 130, 153); */
-    }
-
     .main-bunner-content {
         border-radius: 48px;
     }
@@ -65,16 +75,9 @@
 }
 
 @media (max-width: 1200px) {
-    .classic_button {
-        padding: 3.5%;
-    }
 
     :root {
         --default-vw: -75vw;
-    }
-
-    .main-bunner {
-        /* background-color: rgb(145, 202, 32); */
     }
 
     .main-bunner-content {
@@ -130,10 +133,6 @@
 
     .categories_content button {
         padding: 1px;
-    }
-
-    .main-bunner {
-        /* background-color: rgb(201, 201, 201); */
     }
 
     .column {
@@ -202,7 +201,7 @@
 
     .footer_header {
         border-radius: 36px 36px 0px 0px;
-        aspect-ratio: 1320 / 1090;
+        aspect-ratio: 1320 / 790;
     }
 
     .footer_main_right {
@@ -241,6 +240,7 @@
     /*prodpage*/
 
     .buy_product {
+        width: 95%;
         flex-direction: column;
     }
 
@@ -355,7 +355,7 @@
 
     }
 
-    aside>svg:first-of-type {
+    aside>img:first-of-type {
         display: block;
     }
 
@@ -392,5 +392,9 @@
 @media (max-width: 415px) {
     .footer_main_right div:nth-child(2) {
         margin-top: 8%;
+    }
+
+    .classic_button {
+        padding: 3.5%;
     }
 }

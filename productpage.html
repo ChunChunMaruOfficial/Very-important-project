@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/newdrops.css">
+    <link rel="stylesheet" href="style/productpage.css">
+    <link rel="stylesheet" href="style/adaptiveV2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="mobile_header">
+        <img id="mobile_button" src="img/svg/menu.svg" alt="close">
+        <p>New Drops 🔥</p>
+        <p>Men</p>
+        <ul>
+            <a href="listingpage.html">
+                <li>Shoe categories</li>
+            </a>
+            <a href="listingpage.html">
+                <li>Brands</li>
+            </a>
+            <a href="listingpage.html">
+                <li>Characteristics</li>
+            </a>
+            <a href="listingpage.html">
+                <li>Collections </li>
+            </a>
+            <a href="listingpage.html">
+                <li>Popular models</li>
+            </a>
+        </ul>
+        <p>Women</p>
+        <ul>
+            <a href="listingpage.html">
+                <li>Shoe categories</li>
+            </a>
+            <a href="listingpage.html">
+                <li>Brands</li>
+            </a>
+            <a href="listingpage.html">
+                <li>Characteristics</li>
+            </a>
+            <a href="listingpage.html">
+                <li>Collections </li>
+            </a>
+            <a href="listingpage.html">
+                <li>Popular models</li>
+            </a>
+        </ul>
+    </div>
+    <header>
+        <img id="menu_button" src="img/svg/menu.svg" alt="">
+        <div class="header-left">
+            <p>New Drops 🔥</p>
+            <div class="header-left-context">
+                <p>Men</p>
+                <img src="img/svg/headerarrow.svg" alt="down arrow">
+                </svg>
+                <div id="dropdown" class="dropdown-content">
+                    <a href="listingpage.html">Shoe categories</a>
+                    <a href="listingpage.html">Brands</a>
+                    <a href="listingpage.html">Characteristics</a>
+                    <a href="listingpage.html">Collections </a>
+                    <a href="listingpage.html">Popular models</a>
+                </div>
+            </div>
+            <div class="header-right-context">
+                <p>Women</p>
+                <img src="img/svg/headerarrow.svg" alt="down arrow">
+                <div id="dropdownW" class="dropdown-content ">
+                    <a href="listingpage.html">Shoe categories</a>
+                    <a href="listingpage.html">Brands</a>
+                    <a href="listingpage.html">Characteristics</a>
+                    <a href="listingpage.html">Collections </a>
+                    <a href="listingpage.html">Popular models</a>
+                </div>
+            </div>
+        </div>
+        <a class="logo" href="index.html">
+            <img src="img/svg/logo.svg" alt="Logo">
+        </a>
+        <div class="header-right">
+            <img id="search" src="img/svg/search.svg" alt="Search">
+            <img src="img/svg/account.svg" alt="">
+            <div class="header-user">
+                <p>0</p> <!-- кол-во покупок -->
+            </div>
+        </div>
+        <div class="header_input">
+            <input type="text">
+            <button class="classic_button" id="close_header">X</button>
+        </div>
+    </header>
+    <section class="column">
+   
+        <div class="buy_product">
+            <div class="product_img">
+                <div class="main_img0"></div>
+            </div>
+
+
+            <div class="product_info">
+                <div>New Release</div>
+                <p>ADIDAS 4DFWD X PARLEY RUNNING SHOES</p>
+                <p>$125.00</p>
+
+                <div class="colors">
+                    <p>Color</p>
+                    <div id="blue" onclick="Blue()"></div>
+                    <div id="green" onclick="Green()"></div>
+                </div>
+                <div class="size">
+                    <div class="size_head">
+                        <p>size</p>
+                        <p>Size chart</p>
+                    </div>
+                    <div class="size_main">
+                        <button class="black_button size_number" id="size">38</button>
+                    </div>
+                </div>
+                <div class="get">
+                    <button class="black_button">Add to cart</button> <button class="black_button"><img src="img/svg/addfavorites.svg" alt="add">
+                    </button>
+                    <button class="classic_button">buy it now</button>
+                </div>
+                <div class="about_product">
+                    <p>About the product</p>
+                    <p>Shadow Navy / Army Green <br> <br>
+                        This product is excluded from all promotional discounts and offers. <br> <br>
+                    <ul>
+                        <li> Pay over time in interest-free installments with Affirm, Klarna or Afterpay. </li>
+                        <li> Join adiClub to get unlimited free standard shipping, returns, & exchanges.</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <span class="new_drops_header">
+            <p>You may also like</p>
+        </span>
+
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30"
+            centered-slides="true" speed="1700" autoplay-delay="3000" autoplay-disable-on-interaction="false">
+            <swiper-slide>
+                <div class="new_drops_content"></div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="new_drops_content"></div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="new_drops_content"></div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="new_drops_content"></div>
+            </swiper-slide>
+        </swiper-container>
+
+        <footer>
+            <div class="footer_header">
+                <div class="footer_header_left">
+                    <div class="header_left_first">
+                        <p>Join our KicksPlus Club & get 15% off</p>
+                        <p>Sign up for free! Join the community.</p>
+                    </div>
+                    <div class="header_left_second">
+                        <input type="text" placeholder="Email adress">
+                        <button class="black_button">submit</button>
+                    </div>
+                </div>
+                <img src="img/svg/headerfooterlogo.svg" alt="logo">
+            </div>
+            <div class="footer_main">
+                <img src="img/svg/biglogo.svg" alt="Very big logo">
+                <div class="footer_main_left">
+                    <p>About us</p>
+                    <p>We are the biggest hyperstore in the universe. We got you all cover with our exclusive
+                        collections and latest drops.</p>
+                </div>
+                <div class="footer_main_right">
+                    <div>
+                        <p class="yellowtext">Categories</p>
+                        <ul>
+                            <li>Runners</li>
+                            <li>Sneakers</li>
+                            <li>Basketball</li>
+                            <li>Outdoor</li>
+                            <li>Golf</li>
+                            <li>Hiking</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="yellowtext">Company</p>
+                        <ul>
+                            <li>About</li>
+                            <li>Contact</li>
+                            <li>Blogs</li>
+                        </ul>
+                    </div>
+                    <div class="Follow_us">
+                        <p class="yellowtext">Follow us</p>
+                        <div>
+                            <img src="img/svg/facebook.svg" alt="facebook">
+                            <img src="img/svg/instagram.svg" alt="instagram">
+                            <img src="img/svg/twitter.svg" alt="twitter">
+                            <img src="img/svg/tiktok.svg" alt="tiktok">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="script/productpage.js"></script>
+    <script src="script/scriptbase.js"></script>
+    <script src="script/newdrops.js"></script>
+</body>
+
+</html>

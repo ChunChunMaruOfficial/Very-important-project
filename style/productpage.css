@@ -13,16 +13,8 @@ body {
     flex-direction: column;
 }
 
-header{
+header {
     margin-bottom: 4%;
-}
-
-.column{
-    width: 75%;
-    margin: auto auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 }
 
 .buy_product {
@@ -31,12 +23,14 @@ header{
     flex-direction: row;
     gap: 16px;
 }
- 
+
 .hew_drops {
     width: 91.7%;
 }
 
 .product_img {
+    border-radius: 6%;
+    overflow: hidden;   
     width: 100%;
     aspect-ratio: 890 / 1036;
     display: flex;
@@ -270,8 +264,12 @@ header{
     margin-left: 4%;
 }
 
-.new_drops_header{
+.new_drops_header {
     margin-top: 128px;
+}
+
+.new_drops_header p {
+width: 100%;
 }
 
 .new_drops_content {

@@ -1,11 +1,11 @@
 
 
 for (let i = 0; i < 3; i++) {
-    var clonedFrame = document.querySelector('.main_img0').cloneNode(true);
+    let clonedFrame = document.querySelector('.main_img0').cloneNode(true);
     document.querySelector('.product_img').appendChild(clonedFrame);
     clonedFrame.classList.remove("main_img0");
     clonedFrame.classList.add("main_img" + (i + 1));
-    clonedFrame.style.backgroundImage = "url('../img/product_page/" + (i + 1) + ".png')";
+    clonedFrame.style.backgroundImage = "url('img/product_page/" + (i + 1) + ".png')";
 
 }
 
@@ -13,37 +13,24 @@ for (let i = 0; i < 3; i++) {
 let blue = document.querySelector('#blue');
 let green = document.querySelector('#green');
 blue.style.outline = '3.5px solid rgb(37, 48, 67)';
-green.addEventListener('click', () => {
+function Green(){
     green.style.outline = '3.5px solid rgb(112, 126, 110)';
     blue.style.removeProperty("outline");
     for (let i = 0; i < 4; i++) {
-        document.querySelector('.main_img' + i).style.backgroundImage = "url('../img/product_page/1" + i + ".png')";
-        switch (i) {
-            case 0:
-                document.querySelector('.main_img' + i).style.borderRadius = "46px 0px 0px 0px"
-                break;
-            case 1:
-                document.querySelector('.main_img' + i).style.borderRadius = " 0px 46px 0px 0px"
-
-                break;
-            case 2:
-                document.querySelector('.main_img' + i).style.borderRadius = " 0px 0px 0px 46px"
-                break;
-            case 3:
-                document.querySelector('.main_img' + i).style.borderRadius = " 0px 0px 46px 0px"
-                break;
-        }
+        document.querySelector('.main_img' + i).style.backgroundImage = "url('img/product_page/1" + i + ".png')";
     }
-});
-blue.addEventListener('click', () => {
+}
+
+function Blue() {
     blue.style.outline = '3.5px solid rgb(37, 48, 67)';
     green.style.removeProperty("outline");
     for (let i = 0; i < 4; i++) {
-        document.querySelector('.main_img' + i).style.backgroundImage = "url('../img/product_page/" + i + ".png')";
+        document.querySelector('.main_img' + i).style.backgroundImage = "url('img/product_page/" + i + ".png')";
     }
-});
+}
+
 for (let i = 0; i < 9; i++) {
-    var clonedFrame = document.querySelector('#size').cloneNode(true);
+    let clonedFrame = document.querySelector('#size').cloneNode(true);
     document.querySelector('.size_main').appendChild(clonedFrame);
     clonedFrame.innerText = 39 + i;
 }

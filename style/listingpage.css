@@ -34,16 +34,9 @@ header{
 
 .column {
     gap: 1.5vh;
-
-    width: 75%;
-    margin: auto auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
 }
 
-section {
+.section_bunner {
     background-image: url('../img/listingpage.png');
     width: 100%;
     aspect-ratio: 1325 / 395;
@@ -55,13 +48,13 @@ section {
     align-items: center;
 }
 
-section div {
+.section_bunner div {
     position: absolute;
     left: 3%;
 }
 
 
-section div>p:nth-of-type(1) {
+.section_bunner div>p:nth-of-type(1) {
     color: rgb(231, 231, 227);
     font-family: Open Sans;
     font-size: calc(8px + 16 * (100vw / 1440));
@@ -69,14 +62,14 @@ section div>p:nth-of-type(1) {
     line-height: 33px;
 }
 
-section div>p:nth-of-type(2) {
+.section_bunner div>p:nth-of-type(2) {
     color: rgb(255, 255, 255);
     font-family: Rubik;
     font-size: calc(16px + 58 * (100vw / 1440));
     font-weight: 600;
 }
 
-section div>p:nth-of-type(3) {
+.section_bunner div>p:nth-of-type(3) {
     width: 55%;
     word-wrap: break-word;
     /* Open Sans/Regular/20px */
@@ -139,8 +132,10 @@ aside {
     aspect-ratio: 315 / 964;
 }
 
-aside>svg:first-of-type {
+aside>img:first-of-type {
     display: none;
+    height: 1.5em;
+    width: 1.5em;
 }
 
 aside>span {
@@ -262,21 +257,17 @@ aside>p:first-of-type {
 
 .checkbox_number {
     height: min-content;
-    align-items: center;
-    display: flex;
+        display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;
     overflow: hidden;
 }
 
 .checkbox_color {
     height: min-content;
-    align-items: center;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;
     overflow: hidden;
 }
 
@@ -408,11 +399,6 @@ aside>p:first-of-type {
     border: 1px solid rgb(35, 35, 33);
     border-radius: 8px;
     background-color: #E7E7E3;
-}
-
-.nav_buttons button:active {
-    background-color: rgb(35, 35, 33);
-    color: rgb(244, 242, 242);
 }
 
 footer{
